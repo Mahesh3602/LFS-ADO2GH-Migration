@@ -63,10 +63,10 @@ Now, execute your standard ADO2GH Migration Script. Because the history now only
 ## Phase 3: Bridge the Data (Claiming Files)
 The migration script moves the "receipts" (pointers) but not the "cargo" (the 800MB data). You must manually move the data from the Azure Vault to the GitHub Vault.
 
-### Step A: Add Both Remotes
+### Step A: Clone and add Remotes repos
 ``` bash
+git clone <GITHUB_URL>
 git remote add azure <ADO_URL>
-git remote add github <GITHUB_URL>
 ```
 
 ### Step B: Transfer the Binary Cargo
@@ -75,7 +75,7 @@ git remote add github <GITHUB_URL>
 git lfs fetch azure main
 
 # Upload data to GitHub
-git lfs push github --all
+git lfs push origin --all
 ```
 
 ### Step C: Finalize Local Files
