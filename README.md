@@ -37,6 +37,7 @@ ls -lrth
 # Target specific extensions (e.g., .bin, .png)
 git lfs migrate import --everything --include="*.bin,*.png"
 ```
+![Migrate2lfs](./Images/migrate2lfs.png)
 
 ### Step D: Verify History is Reduced
 ```bash
