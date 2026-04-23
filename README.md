@@ -9,7 +9,7 @@ GitHub enforces a strict 100MB limit for standard Git objects. If a file (e.g., 
 Use Git LFS or remove the large files from the git history.
 Large files: [ { file_path: file2_400mb.bin, size: 419430400 bytes } ]
     
-    ![Error Message](./Images/error-msg.png)
+![Error Message](./Images/error-msg.png)
 
 ## Prerequisites
 Developers must have Git LFS installed and initialized globally on their machines.
