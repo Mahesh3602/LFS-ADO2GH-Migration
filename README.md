@@ -2,7 +2,7 @@
  ###### Important: Standard migration tools (GEI/ado2gh) will fail if the source repository contains files larger than 400MB within the Git history. Use this process to scrub history and bridge LFS data.
 
 ## The Problem: Migration Failure
-GitHub enforces a strict 100MB limit for standard Git objects. If a file (e.g., file_400mb.bin) was ever committed normally, the migration will fail even if the file is currently small.
+GitHub enforces a strict 400MB limit for standard Git objects. If a file (e.g., file_400mb.bin) was ever committed normally, the migration will fail even if the file is currently small.
   
   ### Example error
   > [ERROR] Git source migration failed. Error message: Files above push limit detected. 
